@@ -28,7 +28,8 @@ p {
 footer {
   text-align: center;
   display: block;
-  margin: 60px 0 60px;
+  margin: 60px auto 60px;
+  max-width: 80%;
 }
 
 a {
@@ -58,4 +59,25 @@ img {
   margin: 0 5px;
   text-transform: none;
   letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
 }
